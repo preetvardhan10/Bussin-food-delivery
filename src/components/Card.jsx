@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 
 function Card({name,image,price,type}) {
   return (
-    <div className={`w-[300px] h-[400px] bg-white p-3 rounded-lg flex flex-col gap-[12px] `}>
+    <div className={`w-[300px] h-[400px] bg-white p-3 rounded-lg flex flex-col gap-[12px] hover:shadow-xl transition-all ${type === "Veg" ? "hover:border-2 hover:border-green-400" : "hover:border-2 hover:border-red-400"}`}>
             <div className='w-[100%] h-[60%] overflow-hidden rounded-lg '>
             <img src={image} alt='Pankcake Loading...' className='object-cover ' />
             </div>
